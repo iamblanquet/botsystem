@@ -1,24 +1,31 @@
 {
-  "name": "site-creator-vinext-starter",
+  "name": "botsystem",
   "version": "0.1.0",
   "private": true,
   "engines": {
-    "node": ">=22.13.0"
+    "node": "24.x"
   },
   "scripts": {
-    "test": "node --test tests/platform.test.mjs",
+    "test": "node --test tests/platform.test.mjs tests/deployment.test.mjs",
     "typecheck": "tsc --noEmit",
     "install:ci": "node scripts/install-ci.mjs",
     "dev": "node scripts/run-framework.mjs dev",
     "build": "node scripts/run-framework.mjs build",
     "start": "node --import ./scripts/sites-env.mjs ./node_modules/wrangler/bin/wrangler.js dev --config dist/server/wrangler.json --local --persist-to .wrangler/state --ip 127.0.0.1 --inspector-port 0",
     "lint": "eslint . --ignore-pattern dist --ignore-pattern .next",
-    "db:generate": "drizzle-kit generate"
+    "db:generate": "drizzle-kit generate",
+    "dev:vercel": "next dev --webpack --hostname 127.0.0.1 --port 5174",
+    "build:vercel": "next build --webpack",
+    "start:vercel": "next start --hostname 127.0.0.1 --port 5174",
+    "db:migrate:vercel": "node --env-file-if-exists=.env.vercel scripts/migrate-vercel.mjs",
+    "admin:password": "node scripts/hash-admin-password.mjs"
   },
   "dependencies": {
     "@base-ui/react": "^1.7.0",
     "@hookform/resolvers": "^5.7.1",
+    "@libsql/client": "0.18.0",
     "@shadcn/react": "^0.3.0",
+    "@vercel/blob": "2.9.0",
     "class-variance-authority": "0.7.1",
     "clsx": "2.1.1",
     "cmdk": "^1.1.1",

@@ -1,5 +1,7 @@
+import './knowledge.css';
 import type { Metadata } from "next";
 import "./globals.css";
+import "./chat-appearance.css";
 
 export const metadata: Metadata = {
   title: "Nexo · Tus asistentes, un solo lugar",

@@ -1,4 +1,13 @@
+import { knowledgeSegments } from './knowledge-import';
 export const MICRO = 1_000_000;
+export const GEMINI_MAX_OUTPUT_TOKENS = 4096;
+export function geminiGenerationConfig(model: string) {
+  const major = Number(model.match(/^gemini-(\d+)/)?.[1] || 0);
+  // Gemini 3+ uses thinking levels; sampling controls are deprecated for these models.
+  return major >= 3
+    ? { maxOutputTokens: GEMINI_MAX_OUTPUT_TOKENS, thinkingConfig: { thinkingLevel: 'LOW' } }
+    : { maxOutputTokens: GEMINI_MAX_OUTPUT_TOKENS, temperature: 0.3 };
+}
 export function moneyToMicros(value: unknown) {
   const n = Number(value);
   if (!Number.isFinite(n) || n < 0 || n > 1_000_000) throw new Error('Importe inválido.');
@@ -7,15 +16,20 @@ export function moneyToMicros(value: unknown) {
 export function costMicros(input: number, output: number, inputPrice: number, outputPrice: number) {
   return Math.ceil((input * inputPrice + output * outputPrice) / MICRO);
 }
+export function mentionedProducts<T extends { name: string }>(answer: string, products: T[]) {
+  const normalize = (value: string) => value.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/[^a-z0-9]+/g, ' ').trim();
+  const haystack = ' ' + normalize(answer) + ' ';
+  return products.filter(p => normalize(p.name).length >= 3 && haystack.includes(' ' + normalize(p.name) + ' ')).slice(0, 3);
+}
 export function chunks(text: string, size = 1300) {
   const clean = text.replace(/\r/g, '').trim();
   const out: string[] = [];
   for (let i = 0; i < clean.length; i += size - 180) out.push(clean.slice(i, i + size));
   return out;
 }
-export function retrieve(query: string, docs: { name: string; content: string }[]) {
+export function retrieve(query: string, docs: { name: string; content: string; type?: string }[]) {
   const tokens = [...new Set(query.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '').match(/[a-z0-9]{3,}/g) || [])];
-  const ranked = docs.flatMap(d => chunks(d.content).map(content => {
+  const ranked = docs.flatMap(d => knowledgeSegments(d.content, d.type).map(content => {
     const normalized = content.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
     return { name: d.name, content, score: tokens.reduce((s, t) => s + (normalized.includes(t) ? t.length : 0), 0) };
   })).sort((a, b) => b.score - a.score);

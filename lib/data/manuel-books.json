@@ -1,0 +1,124 @@
+{
+  "checkedAt": "2026-11-09",
+  "catalogUrl": "https://www.mmartinez1122.com/books-es.html",
+  "note": "Resúmenes propios de las reseñas públicas del autor. Las etiquetas son clasificaciones editoriales basadas en esas reseñas. No se consultaron textos completos ni precios de librerías.",
+  "books": [
+    {
+      "slug": "historia-como-pacto",
+      "name": "La Historia como Pacto",
+      "description": "Obra de perspectiva bíblica que relaciona el devenir histórico con compromisos colectivos y consecuencias éticas. Examina cómo el olvido de esos acuerdos lleva a repetir errores y propone pensar el papel de cada generación frente a su pasado. Sus ejes son la memoria, la responsabilidad y los ciclos morales.",
+      "format": "Edición Kindle, según el sitio del autor.",
+      "languageNote": "La ficha declara español.",
+      "tags": ["historia", "reflexion", "memoria", "responsabilidad", "ciclos morales", "biblia", "espiritualidad"],
+      "sourceUrl": "https://www.mmartinez1122.com/historia-como-pacto.html"
+    },
+    {
+      "slug": "los-ciclos-de-la-historia",
+      "name": "Los ciclos de la historia",
+      "description": "Lectura profética de los procesos de expansión y crisis de los imperios. Vincula referencias simbólicas y temporales con decisiones políticas para imaginar la aparición de un poder imperial y sus posibles momentos decisivos. La reseña expresa la interpretación del autor; sus pronósticos no se presentan como hechos comprobados.",
+      "format": "Edición Kindle, según el sitio del autor.",
+      "languageNote": "La ficha declara español.",
+      "tags": ["historia", "imperios", "politica", "profecia", "simbolismo", "ciclos historicos"],
+      "sourceUrl": "https://www.mmartinez1122.com/los-ciclos-de-la-historia.html"
+    },
+    {
+      "slug": "22-la-guerra-de-los-dioses",
+      "name": "22: La Guerra de los Dioses",
+      "description": "Novela que imagina una disputa entre veintidós divinidades por el dominio de la humanidad, con el tarot como parte de su mecanismo de poder. La candidatura de Denise Richards entra en conflicto con la organización secreta SCAN. Combina intriga política, personajes históricos y una lucha entre fuerzas opuestas dentro de un universo ficticio.",
+      "format": "Novela; la ficha indica 561 páginas.",
+      "languageNote": "La ficha declara inglés, aunque presenta título y reseña en español y el enlace comercial contiene Spanish. Confirmar el idioma de la edición antes de comprar.",
+      "tags": ["novela", "fantasia", "tarot", "intriga politica", "dioses", "luz y oscuridad"],
+      "sourceUrl": "https://www.mmartinez1122.com/22-la-guerra-de-los-dioses.html"
+    },
+    {
+      "slug": "codigo-secreto",
+      "name": "11: El código secreto",
+      "description": "Ficción centrada en Sebastián Camote, un psiquiatra cuya experiencia después de morir conecta su identidad con Don Quijote y con una exploración del número once. La narración mezcla vidas anteriores, karma y planos temporales simultáneos. Las asociaciones numéricas pertenecen al planteamiento literario y espiritual de la obra.",
+      "format": "La ficha indica 422 páginas. Entrada distinta de la segunda versión del catálogo.",
+      "languageNote": "La ficha declara inglés, pese al título y a la reseña en español. Confirmar el idioma de la edición antes de comprar.",
+      "tags": ["novela", "numerologia", "karma", "reencarnacion", "don quijote", "vida despues de la muerte", "misterio"],
+      "sourceUrl": "https://www.mmartinez1122.com/codigo-secreto.html"
+    },
+    {
+      "slug": "11-codigo-secreto-otra-edicion",
+      "name": "11: El Código Secreto · Segunda versión",
+      "description": "Versión con portada y referencia comercial propias dentro del universo del código once. Su presentación conserva la exploración de vínculos entre destino, numerología, karma y diferentes momentos del tiempo. Se mantiene separada de la otra ficha de la obra para identificar la versión elegida.",
+      "format": "Segunda versión, según el catálogo del autor. No se afirma que su contenido sea idéntico a la otra edición.",
+      "languageNote": "La ficha declara español.",
+      "tags": ["numerologia", "destino", "karma", "misterio", "segunda version"],
+      "sourceUrl": "https://www.mmartinez1122.com/11-codigo-secreto-otra-edicion.html"
+    },
+    {
+      "slug": "nostradamus-mi-primera-novela",
+      "name": "Nostradamus: Mi primera novela",
+      "description": "Relato de suspenso situado en una Barcelona futura de 2040 y narrado desde la perspectiva de Nostradamus. La obra combina una historia política imaginaria con oráculos, numerología y reflexiones sobre la existencia después de la muerte. Las predicciones y escenarios descritos forman parte de su propuesta narrativa y esotérica, no de acontecimientos verificados.",
+      "format": "Novela; la ficha indica 350 páginas y publicación en 2023.",
+      "languageNote": "La ficha declara español.",
+      "tags": ["novela", "nostradamus", "numerologia", "profecia", "suspenso", "barcelona", "vida despues de la muerte"],
+      "sourceUrl": "https://www.mmartinez1122.com/nostradamus-mi-primera-novela.html"
+    },
+    {
+      "slug": "la-guerra-de-los-dioses-parte-iii",
+      "name": "La Guerra de los Dioses · Parte III",
+      "description": "Tercera entrega de la serie El soñador que descubrió los secretos del Universo, realizada como novela gráfica con ilustraciones de Mark Golding. El Doctor Camote afronta un encuentro con un adversario durante Halloween en Miami. Su aventura aborda creencias sobre el karma y la reencarnación y una búsqueda de esperanza en un entorno adverso.",
+      "format": "Novela gráfica, parte III; la ficha indica 131 páginas. Es una entrada diferente de 22: La Guerra de los Dioses.",
+      "languageNote": "La ficha declara inglés, con reseña en español. Confirmar el idioma de la edición. Los enlaces de compra y vista previa apuntan a referencias distintas.",
+      "tags": ["novela grafica", "comic", "karma", "reencarnacion", "doctor camote", "serie el sonador", "parte iii"],
+      "sourceUrl": "https://www.mmartinez1122.com/la-guerra-de-los-dioses-parte-iii.html"
+    },
+    {
+      "slug": "el-sonador-que-descubrio-los-secretos-del-universo",
+      "name": "Recuerdos de una vida pasada · Parte II",
+      "description": "Segunda entrega de El soñador que descubrió los secretos del Universo, presentada con estructura de cómic e ilustrada por Mark Golding. A través del Doctor Camote, enlaza una confrontación en Miami con sueños, destino y creencias sobre la continuidad de la vida. La reseña sitúa el karma y la reencarnación entre sus temas centrales.",
+      "format": "Novela gráfica, parte II; la ficha indica 131 páginas. El catálogo la llama Recuerdos de una vida pasada y su página usa como encabezado el nombre de la serie.",
+      "languageNote": "La ficha declara inglés, con reseña en español. Confirmar el idioma de la edición antes de comprar.",
+      "tags": ["novela grafica", "comic", "karma", "reencarnacion", "doctor camote", "serie el sonador", "parte ii", "suenos"],
+      "sourceUrl": "https://www.mmartinez1122.com/el-sonador-que-descubrio-los-secretos-del-universo.html"
+    },
+    {
+      "slug": "fila-47",
+      "name": "Fila 47",
+      "description": "Novela de suspenso existencial que parte de una espera y de la percepción de un tiempo vital limitado. Entrelaza la enfermedad y la posibilidad de regresar con preguntas sobre la memoria y el destino. La atmósfera de incertidumbre convierte las señales que rodean esa espera en elementos de misterio y reflexión.",
+      "format": "Novela, edición Kindle según el sitio del autor.",
+      "languageNote": "La ficha declara español.",
+      "tags": ["novela", "suspenso existencial", "reflexion", "memoria", "destino", "enfermedad", "misterio"],
+      "sourceUrl": "https://www.mmartinez1122.com/fila-47.html"
+    },
+    {
+      "slug": "la-comedia-maldita",
+      "name": "La comedia maldita",
+      "description": "Texto teatral organizado en cuatro actos y un epílogo. Emplea un intervalo recurrente de ochenta y cuatro años, referencias históricas y símbolos de ruina para plantear preguntas sobre el ejercicio del poder y sus consecuencias destructivas. Se distingue de La maldita comedia, que el catálogo presenta como novela.",
+      "format": "Obra teatral en cuatro actos y epílogo, según el sitio del autor.",
+      "languageNote": "La ficha declara español.",
+      "tags": ["teatro", "historia", "simbolismo", "poder", "ciclos historicos", "tragedia"],
+      "sourceUrl": "https://www.mmartinez1122.com/la-comedia-maldita.html"
+    },
+    {
+      "slug": "la-maldita-comedia",
+      "name": "La maldita comedia",
+      "description": "Novela de atmósfera sombría que vincula ciudades destruidas y fechas recurrentes con una lectura de las tragedias humanas. Comparte referencias simbólicas con el universo de La comedia maldita, pero utiliza una forma narrativa distinta. El ciclo de ochenta y cuatro años funciona como una señal de repetición y advertencia dentro de la obra.",
+      "format": "Novela, según el sitio del autor. No confundir con la obra teatral La comedia maldita.",
+      "languageNote": "La ficha declara español.",
+      "tags": ["novela", "historia", "simbolismo", "ciclos historicos", "tragedia", "tono oscuro"],
+      "sourceUrl": "https://www.mmartinez1122.com/la-maldita-comedia.html"
+    },
+    {
+      "slug": "nostradamus-amor-poder-redencion",
+      "name": "Nostradamus: Amor, poder, redención",
+      "description": "Drama de fondo político ambientado en una Barcelona histórica. La tensión entre vínculos afectivos, convicciones religiosas y aspiraciones de dominio conduce su conflicto. La profecía aporta un marco simbólico a una reflexión teatral sobre la influencia del poder tanto en la vida colectiva como en las relaciones personales.",
+      "format": "Obra teatral, según el sitio del autor.",
+      "languageNote": "La ficha declara español.",
+      "tags": ["teatro", "nostradamus", "politica", "poder", "fe", "amor", "barcelona", "profecia"],
+      "sourceUrl": "https://www.mmartinez1122.com/nostradamus-amor-poder-redencion.html"
+    },
+    {
+      "slug": "nostradamus-profecia-cataluna",
+      "name": "Nostradamus: Profecía sobre la separación de Cataluña",
+      "description": "Obra de orientación profética e historia alternativa que imagina una separación de Cataluña y una transformación de su organización política y religiosa. Explora la relación entre pertenencia territorial, creencias e influencia política en Europa. Se trata del escenario especulativo que presenta el autor, no de una descripción de la situación real ni de una predicción comprobada.",
+      "format": "Edición Kindle, según el sitio del autor.",
+      "languageNote": "La ficha declara español.",
+      "tags": ["historia alternativa", "nostradamus", "profecia", "politica", "cataluna", "identidad", "religion"],
+      "sourceUrl": "https://www.mmartinez1122.com/nostradamus-profecia-cataluna.html"
+    }
+  ]
+}

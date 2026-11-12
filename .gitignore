@@ -12,6 +12,7 @@
 # Generated builds and framework state
 /dist/
 /.next/
+/.next-vercel/
 /.vinext/
 /out/
 next-env.d.ts
@@ -29,12 +30,21 @@ yarn-error.log*
 # Local environment and keys
 .env*
 !.env.example
+!.env.vercel.example
 .dev.vars*
 *.pem
 
 # Checkout-local tool state
 /.wrangler/
 /.sites-runtime/
+/.vercel/
+/.openai/
+/output/
+/tmp/
+*.sqlite
+*.sqlite-*
+*.db
+*.db-*
 
 # Workspace scaffolding and publication archives
 /.agents/

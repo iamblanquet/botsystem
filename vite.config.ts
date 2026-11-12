@@ -1,6 +1,6 @@
 import vinext from "vinext";
 import { defineConfig } from "vite";
-import hostingConfig from "./.openai/hosting.json";
+import { readFileSync } from 'node:fs';
 import { readExecutionProfile } from "./scripts/execution-profile.mjs";
 import { configureToolEnvironment } from "./scripts/tool-environment.mjs";
 import { sites } from "./scripts/vite/sites-vite-plugin";
@@ -9,6 +9,9 @@ import { connectorPreview } from "./scripts/vite/connector-preview-plugin.mjs";
 const SITE_CREATOR_PLACEHOLDER_DATABASE_ID =
   "00000000-0000-4000-8000-000000000000";
 
+// Optional checkout metadata is never needed by a fresh GitHub clone.
+let hostingConfig: { d1?: string; r2?: string } = { d1: 'DB', r2: 'BUCKET' };
+try { hostingConfig = JSON.parse(readFileSync(new URL('./.openai/hosting.json', import.meta.url), 'utf8')); } catch {}
 const { d1, r2 } = hostingConfig;
 
 // macOS Seatbelt blocks FSEvents, so Codex previews need polling for HMR.

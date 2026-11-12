@@ -13,6 +13,7 @@ export const assistants = sqliteTable('assistants', {
   suggestions: text('suggestions').notNull(), model: text('model').notNull().default('gemini-3.8-flash'),
   mode: text('mode').notNull().default('demo'), published: integer('published').notNull().default(0),
   origins: text('origins').notNull(), catalogUrl: text('catalog_url').notNull().default(''),
+  theme: text('theme').notNull().default('{}'),
   createdAt: text('created_at').notNull(),
 });
 export const providers = sqliteTable('providers', {
@@ -52,3 +53,21 @@ export const usage = sqliteTable('usage', {
 export const limits = sqliteTable('rate_limits', {
   id: text('id').primaryKey(), count: integer('count').notNull().default(0), expires: integer('expires').notNull(),
 });
+export const playbooks = sqliteTable('assistant_playbooks', {
+  assistantId: text('assistant_id').primaryKey().references(() => assistants.id),
+  version: integer('version').notNull().default(1), config: text('config').notNull(), updatedAt: text('updated_at').notNull(),
+});
+export const flowSessions = sqliteTable('flow_sessions', {
+  conversationId: text('conversation_id').primaryKey().references(() => conversations.id),
+  state: text('state').notNull(), revision: integer('revision').notNull().default(0),
+});
+export const flowRequests = sqliteTable('flow_requests', {
+  requestKey: text('request_key').primaryKey(), assistantId: text('assistant_id').notNull().references(() => assistants.id),
+  conversationId: text('conversation_id').notNull().references(() => conversations.id), response: text('response').notNull(),
+});
+export const imageAssets = sqliteTable('image_assets', {
+  id: text('id').primaryKey(), companyId: text('company_id').notNull().references(() => companies.id),
+  name: text('name').notNull(), mime: text('mime').notNull(), bytes: integer('bytes').notNull(),
+  width: integer('width').notNull(), height: integer('height').notNull(), sha256: text('sha256').notNull(),
+  storageKey: text('storage_key').notNull(), createdAt: text('created_at').notNull(),
+}, t => [uniqueIndex('image_company_hash').on(t.companyId, t.sha256)]);
